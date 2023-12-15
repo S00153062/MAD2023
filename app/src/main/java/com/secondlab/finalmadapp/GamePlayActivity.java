@@ -192,7 +192,7 @@ public class GamePlayActivity extends AppCompatActivity implements SensorEventLi
                 // Auto-increment the request code
                 int requestCode = requestCodeCounter++;
 
-                // Use a Handler to delay the transition for a short period (e.g., 1000 milliseconds)
+                // Use a Handler to delay
                 new Handler().postDelayed(() -> {
                     // Send the updated arrayIndex, score, and newGameSequence back to MainActivity
                     Intent resultIntent = new Intent();

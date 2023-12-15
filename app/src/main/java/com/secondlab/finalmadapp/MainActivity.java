@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private int getRandomColor() {
-        return getRandom(sequenceCount); // Add 1 to ensure the color is in the range [1, 4]
+        return getRandom(sequenceCount);
     }
 
     private Button getButtonForColor(int color) {
@@ -198,10 +198,6 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(r, 600);
     }
 
-    private void generateNewSequence(int newArrayIndex) {
-        // Your logic to generate a new sequence with the given newArrayIndex
-        // ...
-    }
     private int getRandom(int maxValue) {
         return ((int) ((Math.random() * maxValue) + 1));
     }}
